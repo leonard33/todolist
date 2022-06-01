@@ -16,8 +16,9 @@ module.exports = {
     ecmaVersion: "latest",
     sourceType: "module",
   },
-  plugins: ["react"],
+  plugins: ["react", "stylelint-csstree-validator"],
   rules: {
     "react/prop-types": "off",
+    "csstree/validator": true
   },
 };
