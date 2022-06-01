@@ -15,7 +15,7 @@ const Form = ({ setInputText, inputText, setTodo, todo }) => {
     setInputText("");
   };
   return (
-    <form-container>
+    <form-container className="form-container">
       <form id="form-1">
         <input
           value={inputText}

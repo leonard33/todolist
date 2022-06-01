@@ -22,12 +22,18 @@ ul {
   list-style-type: none;
 }
 
+.form-container {
+ height: 500px;
+ border: 1px solid red;
+}
+
 #form-1 {
   display: flex;
   align-items: center;
   width: 35vw;
   margin: auto;
   justify-content: space-between;
+  height: 10vh;
 }
 
 input {

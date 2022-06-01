@@ -18,12 +18,7 @@ const Itemtodo = ({ text, setTodo, todos, todo }) => {
   };
 
   const deletehandler = () => {
-    setTodo(
-      todo.filter((el) => el.id !== todos.id)
-      /*todo.forEach((...todos) => {
-        todos.id = todos.length - 1;
-      })*/
-    );
+    setTodo(todo.filter((el) => el.id !== todos.id));
   };
 
   return (
@@ -31,7 +26,9 @@ const Itemtodo = ({ text, setTodo, todos, todo }) => {
       <div className="complete">
         <input onChange={checkboxhandler} type="checkbox"></input>
       </div>
-      <div className="mytodo">{text}</div>
+
+      {/* if completed add CSS class line*/}
+      <div className={`mytodo ${todos.completed ? "line" : ""}`}>{text}</div>
       <div onClick={deletehandler} className="delete">
         <AiFillDelete />
       </div>
